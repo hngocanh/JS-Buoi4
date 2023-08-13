@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS-Buoi4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="container">
+      <div class="card w-25">
+        <div class="mb-3">
+          <label for="" class="form-label">Item Name</label>
+          <input
+            type="text"
+            name=""
+            id="itemName"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Quantity</label>
+          <input
+            type="number"
+            name=""
+            id="quantity"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Price per item</label>
+          <input
+            type="number"
+            name=""
+            id="price"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button id="Calculate" class="btn btn-primary">Calculate</button>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container">
+      <div class="card w-50">
+        <div class="card-header text-center">
+          <h3>Tính điểm TB và xếp loại học lực</h3>
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="" class="form-label">Họ và Tên</label>
+            <input
+              type="text"
+              name=""
+              id="name"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Điểm Toán</label>
+            <input
+              type="text"
+              name=""
+              id="math"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Điểm Lý</label>
+            <input
+              type="text"
+              name=""
+              id="physics"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Điểm Hóa</label>
+            <input
+              type="text"
+              name=""
+              id="chemistry"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+          </div>
+          <button class="btn btn-primary" id="calculateAvg">
+            Tính điểm TB
+          </button>
+        </div>
+        <div class="card-footer">
+          <p>Điểm TB: <span id="avgGrade"></span></p>
+          <p>Học Lực: <span id="academicPerf"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <div class="mb-3">
+            <label for="" class="form-label">Enter a number from 1 to 4</label>
+            <input
+              type="text"
+              name=""
+              id="number"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+            <small id="helpId" class="text-muted">Help text</small>
+          </div>
+        </div>
+        <button id="search" class="btn btn-danger w-25">Search</button>
+        <div class="card-footer">
+          <p id="spelling"></p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+        <div class="container">
+      <div class="card w-50">
+        <div class="card-header">
+          <div class="mb-3">
+            <label for="" class="form-label">Enter a month</label>
+            <input
+              type="text"
+              name=""
+              id="month"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+            <small id="helpId" class="text-muted">Help text</small>
+          </div>
+        </div>
+        <button id="check" class="btn btn-danger">Check</button>
+        <div class="card-footer">
+          <p id="monthDays"></p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Cho người dùng nhập vào 3 số nguyên. Viết chương trình xuất 3 số theo thứ tự tăng dần -->
+    <div class="container">
+      <h1>
+        Cho người dùng nhập vào 3 số nguyên. Viết chương trình xuất 3 số theo
+        thứ tự tăng dần
+      </h1>
+      <form class="w-25">
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập số thứ nhất</label>
+          <input
+            type="number"
+            name=""
+            id="so1"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập số thứ 2</label>
+          <input
+            type="number"
+            name=""
+            id="so2"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập số thứ 3</label>
+          <input
+            type="number"
+            name=""
+            id="so3"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button class="btn btn-info mb-3" id="btnSort" type="button">
+          Sắp xếp
+        </button>
+        <div class="alert alert-success" role="alert">
+          <strong>Kết quả:</strong>
+          <p id="result"></p>
+        </div>
+      </form>
+    </div>
+
+    <hr />
+    <br />
+
+    <!-- Viết chương trình “Chào hỏi” các thành viên trong gia đình với các đặc điểm. -->
+
+    <div class="container">
+      <div class="card">
+        <div class="card-header text-center">
+          <h1>Hello Family</h1>
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="" class="form-label">Ai đang sử dụng máy?</label>
+            <input
+              type="text"
+              name=""
+              id="member"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+          </div>
+          <button class="btn btn-info" id="confirm">Xác nhận</button>
+        </div>
+        <div class="card-footer">
+          <span id="greeting"></span>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <br />
+
+    <!-- Cho 3 số nguyên. Viết chương trình xuất ra có bao nhiêu số lẻ và bao nhiêu số chẵn -->
+    <div class="container">
+      <h1>
+        Cho 3 số nguyên. Viết chương trình xuất ra có bao nhiêu số lẻ và bao
+        nhiêu số chẵn
+      </h1>
+      <form class="w-25">
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập số thứ nhất</label>
+          <input
+            type="number"
+            name=""
+            id="firstNumber"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập số thứ 2</label>
+          <input
+            type="number"
+            name=""
+            id="secondNumber"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập số thứ 3</label>
+          <input
+            type="number"
+            name=""
+            id="thirdNumber"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button class="btn btn-info mb-3" id="btnCalculate" type="button">
+          Đếm
+        </button>
+        <div class="alert alert-success" role="alert">
+          <strong>Kết quả:</strong>
+          <p id="oddEvenResult"></p>
+        </div>
+      </form>
+    </div>
+    <hr />
+    <br />
+    <!-- Viết chương trình cho nhập 3 cạnh của tam giác. Hãy cho biết đó là tam giác gì? -->
+    <div class="container">
+      <h1>
+        Viết chương trình cho nhập 3 cạnh của tam giác. Hãy cho biết đó là tam
+        giác gì?
+      </h1>
+      <form class="w-25">
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập cạnh thứ nhất</label>
+          <input
+            type="number"
+            name=""
+            id="side1"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập cạnh thứ 2</label>
+          <input
+            type="number"
+            name=""
+            id="side2"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập cạnh thứ 3</label>
+          <input
+            type="number"
+            name=""
+            id="side3"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button class="btn btn-info mb-3" id="btnTriangle" type="button">
+          Xác định
+        </button>
+        <div class="alert alert-success" role="alert">
+          <strong>Kết quả:</strong>
+          <p id="triangle"></p>
+        </div>
+      </form>
+    </div>
+
+    <hr />
+    <br />
+
+    <!-- Viết chương trình nhập vào ngày, tháng, năm (Giả sử nhập đúng, không cần kiểm tra hợp
+lệ). Tìm ngày, tháng, năm của ngày tiếp theo. Tương tự tìm ngày tháng năm của ngày trước
+đó -->
+
+    <div class="container">
+      <h1>
+        Tìm ngày, tháng, năm của ngày tiếp theo. Tương tự tìm ngày tháng năm của
+        ngày trước đó
+      </h1>
+      <div class="mb-3">
+        <label for="" class="form-label">Nhập ngày</label>
+        <input
+          type="number"
+          name=""
+          id="day"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Nhập tháng</label>
+        <input
+          type="number"
+          name=""
+          id="month"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Nhập năm</label>
+        <input
+          type="number"
+          name=""
+          id="year"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-primary" id="btnFindDate">Tìm ngày</button>
+      <div class="alert alert-success" role="alert">
+        <strong>Kết quả:</strong>
+        <p id="nextDate"></p>
+        <p id="previousDate"></p>
+      </div>
+    </div>
+    <hr />
+    <br />
+    <!-- Viết chương trình nhập vào tháng, năm. Cho biết tháng đó có bao nhiêu ngày. (bao gồm
+tháng của năm nhuận) -->
+    <div class="container">
+      <h1>
+        Viết chương trình nhập vào tháng, năm. Cho biết tháng đó có bao nhiêu ngày. (bao gồm
+tháng của năm nhuận)
+      </h1>
+    
+      <div class="mb-3">
+        <label for="" class="form-label">Nhập tháng</label>
+        <input
+          type="number"
+          name=""
+          id="month2"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Nhập năm</label>
+        <input
+          type="number"
+          name=""
+          id="year2"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-primary" id="btnFindDays">Tìm số ngày</button>
+      <div class="alert alert-success" role="alert">
+        <strong>Kết quả:</strong>
+        <p id="numOfDays"></p>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/buoi4.js"></script>
+    <script src="./BaiTapNangCao/NangCao.js"></script>
+  </body>
+</html>
